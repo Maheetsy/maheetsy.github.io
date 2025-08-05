@@ -6,6 +6,8 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://maheetsy.github.io',
+  base: "/",
+  output: "static",
   integrations: [tailwind(), react()],
   vite: {
     resolve: {
