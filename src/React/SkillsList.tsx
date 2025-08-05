@@ -35,17 +35,16 @@ const CategoryIcons = {
 
 const SkillsList = () => {
   const [openItem, setOpenItem] = useState<string | null>(null);
-
   const skills = {
     "Desarrollo Web": [
       "Sistemas web con ASP.NET y C#",
       "Gestión de bases de datos con SQL Server y Firebase",
-      "Desarrollo de sitios responsivos con HTML, CSS y JavaScript",
+      "Desarrollo de sitios responsivos con HTML y CSS",
       "Integración y consumo de APIs REST",
     ],
     "Desarrollo Móvil": [
-      "Aplicaciones móviles con Flutter",
-      "Integración de Firebase para autenticación y Firestore como base de datos",
+      "Aplicaciones móviles con Flutter, Angular y Android Studio",
+      "Conexión a backend con Flask y MongoDB, Firebase",
       "Diseño y desarrollo de interfaces responsivas para dispositivos móviles",
     ],
     "Diseño UI/UX y Prototipado": [
@@ -53,7 +52,13 @@ const SkillsList = () => {
       "Wireframes y prototipos interactivos",
       "Análisis UX para mejorar usabilidad de sistemas reales",
     ],
-  };
+    "Desarrollo Backend y Bases de Datos": [
+      "APIs REST con Flask y Node.js",
+      "Manejo de bases de datos relacionales (SQL Server, MySQL)",
+      "Bases de datos NoSQL con MongoDB y Firebase",
+    ],
+};
+
 
   const toggleItem = (item: string) => {
     setOpenItem(openItem === item ? null : item);
